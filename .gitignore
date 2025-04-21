@@ -1,0 +1,13 @@
+# Arquivos do Photoshop
+*.psd
+*.psb
+
+# Thumbnails e arquivos temporários do Photoshop
+*.tmp
+*.log
+*.lock
+~*.psd
+
+# Arquivos de recuperação automática do Photoshop
+*.psd~
+*.psb~

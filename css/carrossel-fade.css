@@ -1,0 +1,98 @@
+.carousel {
+    margin-top: 100px;
+}
+
+.card-modulo {
+    aspect-ratio: 9/16;
+    width: 260px;
+    /* Ajuste conforme necessário */
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+    flex-shrink: 0;
+    margin: 0 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-modulo img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.cards-carousel {
+    position: relative;
+    width: 100%;
+    user-select: none;
+    overflow-x: auto;
+    padding: 0 10px;
+    /* Esconde a barra de rolagem padrão */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer e Edge */
+}
+
+/* Para navegadores WebKit (Chrome, Safari, Edge baseado no Chromium) */
+.cards-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.cards-track {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    will-change: transform;
+    transition: transform 0.3s ease-out;
+}
+
+.fade-left,
+.fade-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.fade-left {
+    left: -2px;
+    background: linear-gradient(90deg, var(--black) 0%, transparent 100%);
+}
+
+.fade-right {
+    right: -2px;
+    background: linear-gradient(270deg, var(--black) 0%, transparent 100%);
+}
+
+#conteudo .button-container {
+    margin: 50px auto;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .card-modulo {
+        width: 200px;
+    }
+
+    .fade-left,
+    .fade-right {
+        width: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .carousel {
+        margin-top: 80px;
+    }
+
+    #conteudo .button-container {
+        margin-top: 60px;
+    }
+}

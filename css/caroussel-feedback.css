@@ -1,0 +1,190 @@
+.avaliacao-media {
+    margin: auto;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+
+.estrelas {
+    display: inline-block;
+}
+
+.estrela {
+    color: gold;
+    /* Define a cor amarela para as estrelas */
+}
+
+.avaliacao-media .estrela {
+    font-size: 26px;
+    /* Ajuste o tamanho conforme necessário */
+    margin-right: 4px;
+    /* Espaçamento entre as estrelas */
+}
+
+.logo-google-full {
+    display: block;
+    margin: auto;
+    height: 35px;
+    margin-bottom: 50px;
+}
+
+.carousel-box {
+    width: fit-content;
+    min-width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.carousel-content {
+    overflow: hidden;
+}
+
+.carousel {
+    padding-top: 10px;
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 60px;
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.carousel .card {
+    flex: 0 0 350px;
+    max-width: 350px;
+    border-radius: 4px;
+    position: relative;
+}
+
+#feedbacks .carousel .card {
+    background-color: #fff;
+    margin-right: 30px;
+    min-height: 220px;
+    max-height: 220px;
+    position: relative;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+#feedbacks .carousel .card:hover {
+    transform: translateY(-15px);
+}
+
+.logo-google {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    height: 25px;
+}
+
+#feedbacks .carousel .card .top {
+    display: flex;
+}
+
+#feedbacks .carousel .card .foto-perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2b7e40;
+    margin-right: 15px;
+}
+
+#feedbacks .card .estrelas {
+    margin-bottom: 10px;
+    /* Espaçamento entre as estrelas */
+}
+
+#feedbacks .card .estrela {
+    font-size: 20px;
+    /* Ajuste o tamanho conforme necessário */
+    margin-right: 2px;
+    /* Espaçamento entre as estrelas */
+}
+
+.carousel .card h4 {
+    font-size: 14px;
+}
+
+.carousel .card p {
+    font-size: 13px;
+    line-height: 1.6em;
+    color: #040404;
+    text-align: left;
+    max-height: 8em; /* Limita o texto a duas linhas */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4; /* Limita o texto a duas linhas */
+    -webkit-box-orient: vertical;
+    transition: max-height 0.5s ease;
+}
+
+.feedback-text.expanded {
+    -webkit-line-clamp: unset !important; /* Permite texto expandido */
+    line-clamp: unset !important;
+    max-height: none !important; /* Remove a altura máxima */
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: rgb(165, 165, 165);
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font-size: 13px;
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+}
+
+.carousel .card .data {
+    font-size: 11px;
+    line-height: 1.6em;
+    color: #8b8b8b;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+    width: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+button.prev:hover,
+button.next:hover {
+    transform: translateY(-50%) scale(1.2);
+}
+
+button.prev img,
+button.next img {
+    width: 100%;
+}
+
+button.prev {
+    left: -50px;
+}
+
+button.next {
+    right: -55px;
+}
+
+#feedbacks .titulo {
+    color: var(--marrom);
+    font-weight: 400;
+    font-size: 29px;
+    margin-bottom: 50px;
+}
